@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -15,13 +16,13 @@ import java.util.logging.Handler;
 /**
  * Created by Administrator on 16-5-16.
  */
-public class duanxinyanzheng extends Activity {
+public class duanxinyanzheng extends BaseActivity {
     int i=6;
     Timer t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.duanxinyanzheng);
+        super.onCreate(savedInstanceState);
     }
  android.os.Handler h=new android.os.Handler(){
      @Override

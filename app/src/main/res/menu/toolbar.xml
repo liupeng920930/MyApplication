@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/search" android:showAsAction="always" android:actionViewClass="android.widget.SearchView"
+        android:title="搜索" />
+    <item android:id="@+id/fanhui" android:showAsAction="always"  android:title="搜索" android:icon="@drawable/myimg"/>
+    <item android:id="@+id/normal_btn" android:title="关于" android:showAsAction="never"/>
+    </menu>
