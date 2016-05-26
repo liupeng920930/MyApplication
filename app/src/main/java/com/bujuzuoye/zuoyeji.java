@@ -96,6 +96,7 @@ public class zuoyeji extends Activity {
                 if(position==13){
                     Intent i=new Intent(zuoyeji.this,huafeiji.class);
                     startActivity(i);
+
                 }
                 if(position==14){
                     Intent i=new Intent(zuoyeji.this,bianbaixin.class);
