@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myapplication">
+  <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.zrgj.tanqiu.Tanqiu">
+
+        </activity>
+
+        <activity android:name=".bianbaixin">
+
+        </activity>
+
+        <activity android:name="com.com.zrgj.feiji.huafeiji">
+
+        </activity>
+        <activity android:name="com.wucaimihong.mihong">
+
+        </activity>
+        <activity android:name="com.tupianxunhua.huatu">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.huatouxiang">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.duanxinyanzheng">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.jisuanqi">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.qq">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.tongxunlu">
+
+        </activity>
+        <activity android:name="com.tupianshang.tupianjubuxianshi">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.duoxunaanniu">
+
+        </activity>
+        <activity android:name="com.caipin.chakancaipin">
+
+        </activity>
+        <activity android:name="com.caipin.shoujiguishudi">
+
+        </activity>
+        <activity android:name="com.caipin.caipu">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.zidongsousuo">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.xialacaidan">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.jindutiao">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.sousuodanci">
+
+        </activity>
+        <activity android:name="com.caipin.xiangxicaipin">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.tishikuang">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.zuoyeji">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.w.lianxi">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.shoujifenbianlv">
+
+        </activity>
+    </application>
+
+</manifest>

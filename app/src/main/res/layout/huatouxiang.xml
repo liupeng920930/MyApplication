@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/gallerymin1"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imageView4" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/gallerymin2"
+            android:layout_above="@+id/imageView3"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView6"
+            android:src="@drawable/gallerymin4"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView5"
+            android:src="@drawable/gallerymin3"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_toEndOf="@+id/imageView6" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/gallerymin5"
+            android:layout_below="@+id/imageView6"
+            android:layout_toStartOf="@+id/imageView5" />
+
+    </RelativeLayout>
+</LinearLayout>
