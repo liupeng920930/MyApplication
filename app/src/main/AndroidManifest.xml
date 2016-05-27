@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.myapplication">
-  <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/my"
         android:label="独一无二APP"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.zrgj.tanqiu.Tanqiu">
+        <activity android:name="com.zrgj.tanqiu.Tanqiu" >
 
         </activity>
 
@@ -22,74 +23,71 @@
         <activity android:name="com.wucaimihong.mihong">
 
         </activity>
-        <activity android:name="com.tupianxunhua.huatu">
+        <activity android:name="com.tupianxunhua.huatu" android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.bujuzuoye.huatouxiang">
+        <activity android:name="com.bujuzuoye.huatouxiang" android:theme="@style/AppTheme.NoActionBar" >
 
         </activity>
-        <activity android:name="com.bujuzuoye.duanxinyanzheng">
+        <activity android:name="com.bujuzuoye.duanxinyanzheng" android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity android:name="com.bujuzuoye.jisuanqi">
 
         </activity>
-        <activity android:name="com.bujuzuoye.qq">
+        <activity android:name="com.bujuzuoye.qq" android:theme="@style/AppTheme.NoActionBar" >
 
         </activity>
-        <activity android:name="com.bujuzuoye.tongxunlu">
+        <activity android:name="com.bujuzuoye.tongxunlu" android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.tupianshang.tupianjubuxianshi">
+        <activity android:name="com.tupianshang.tupianjubuxianshi" android:theme="@style/AppTheme.NoActionBar" >
 
         </activity>
-        <activity android:name="com.bujuzuoye.duoxunaanniu">
+        <activity android:name="com.bujuzuoye.duoxunaanniu" android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.caipin.chakancaipin">
+        <activity android:name="com.caipin.chakancaipin" android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.caipin.shoujiguishudi">
+        <activity android:name="com.caipin.shoujiguishudi" android:theme="@style/AppTheme.NoActionBar" >
 
         </activity>
-        <activity android:name="com.caipin.caipu">
+        <activity android:name="com.caipin.caipu"  android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.bujuzuoye.zidongsousuo">
+        <activity android:name="com.bujuzuoye.zidongsousuo" android:theme="@style/AppTheme.NoActionBar" >
 
         </activity>
-        <activity android:name="com.bujuzuoye.xialacaidan">
+        <activity android:name="com.bujuzuoye.xialacaidan"  android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.bujuzuoye.jindutiao">
+        <activity android:name="com.bujuzuoye.jindutiao" android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.bujuzuoye.sousuodanci">
+        <activity android:name="com.bujuzuoye.sousuodanci" android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity android:name="com.caipin.xiangxicaipin">
 
         </activity>
-        <activity android:name="com.bujuzuoye.tishikuang">
+        <activity android:name="com.bujuzuoye.tishikuang"  android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity android:name="com.bujuzuoye.zuoyeji">
-
-        </activity>
-        <activity android:name="com.w.lianxi">
-
-        </activity>
-        <activity android:name="com.bujuzuoye.shoujifenbianlv">
-
-        </activity>
-        <activity android:name="com.bujuzuoye.xuanxiangka">
-
-        </activity>
-        <activity android:name="com.fuleiACtivity.BaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.w.lianxi" android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity android:name="com.bujuzuoye.shoujifenbianlv" android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.xuanxiangka">
+
         </activity>
     </application>
 

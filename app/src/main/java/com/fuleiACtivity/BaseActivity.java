@@ -24,12 +24,13 @@ import com.example.administrator.myapplication.R;
 /**
  * Created by Administrator on 2016/5/26.
  */
-public class BaseActivity  extends AppCompatActivity{
+ public abstract class BaseActivity  extends AppCompatActivity{
+    Intent i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.baseactivity);
+        initmycreate(savedInstanceState);
+        i=new Intent(this,zuoyeji.class);
         Toolbar toolbar= (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.mytuo);
@@ -44,7 +45,6 @@ public class BaseActivity  extends AppCompatActivity{
                         b.create().show();
                         break;
                     case R.id.fanhui :
-                        Intent i=new Intent(BaseActivity.this,zuoyeji.class);
                         startActivity(i);
                         break;
                 }
@@ -54,6 +54,7 @@ public class BaseActivity  extends AppCompatActivity{
 
 
     }
+public abstract  void  initmycreate(Bundle savedInstanceState);
 
 
     public boolean onCreateOptionsMenu(Menu menu) {

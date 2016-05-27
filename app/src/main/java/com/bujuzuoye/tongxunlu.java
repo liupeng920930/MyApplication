@@ -4,14 +4,14 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 
 /**
  * Created by Administrator on 16-5-16.
  */
-public class tongxunlu extends Activity {
+public class tongxunlu extends BaseActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.tongxunlu);
     }
 }

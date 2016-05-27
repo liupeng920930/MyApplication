@@ -14,6 +14,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -33,7 +34,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 16-5-18.
  */
-public class chakancaipin extends Activity {
+public class chakancaipin extends BaseActivity {
 
     GridView tv;
 
@@ -63,8 +64,7 @@ public class chakancaipin extends Activity {
          }
      };
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.chakancaipin);
         tv= (GridView) findViewById(R.id.cai);
         tv.setColumnWidth(2);

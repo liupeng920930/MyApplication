@@ -8,14 +8,14 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 
 /**
  * Created by Administrator on 16-5-17.
  */
-public class duoxunaanniu extends Activity {
+public class duoxunaanniu extends BaseActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.duoxuananniu);
         rg= (RadioGroup) findViewById(R.id.xingbie);
         cb1= (CheckBox) findViewById(R.id.checkBox);

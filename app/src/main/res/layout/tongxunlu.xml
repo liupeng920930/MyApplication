@@ -3,12 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+    <include layout="@layout/baseactivity" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="请输入要保存的电话号码"
+        android:hint="请输入要保存的电话号码"
         android:ems="10"
         android:id="@+id/editText2" />
 

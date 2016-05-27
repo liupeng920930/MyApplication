@@ -10,6 +10,7 @@ import android.widget.SearchView;
 import android.widget.SimpleAdapter;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -25,7 +26,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 16-5-24.
  */
-public class sousuodanci extends Activity {
+public class sousuodanci extends BaseActivity {
     SearchView sv;
     ListView lv;
     List<Map<String,Object>> res;
@@ -49,8 +50,7 @@ public class sousuodanci extends Activity {
         }
     };
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.sousuodanci);
         sv= (SearchView) findViewById(R.id.danci);
         lv= (ListView) findViewById(R.id.list);

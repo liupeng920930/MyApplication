@@ -7,18 +7,18 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 
 /**
  * Created by Administrator on 2016/5/26.
  */
-public class shoujifenbianlv extends Activity {
+public class shoujifenbianlv extends BaseActivity {
     TextView tv1;
     TextView tv2;
     TextView tv3;
     TextView tv4;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.shoujifenbianlv);
         tv1= (TextView) findViewById(R.id.kuandu);
         tv2= (TextView) findViewById(R.id.gaodu);

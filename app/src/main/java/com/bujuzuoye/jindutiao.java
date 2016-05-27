@@ -11,11 +11,12 @@ import android.widget.RatingBar;
 import android.widget.SeekBar;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 
 /**
  * Created by Administrator on 16-5-23.
  */
-public class jindutiao extends Activity {
+public class jindutiao extends BaseActivity {
     ImageView img;
     SeekBar see;
     RatingBar rat;
@@ -34,8 +35,7 @@ public class jindutiao extends Activity {
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.jindutiao);
         img= (ImageView) findViewById(R.id.tu);
         see= (SeekBar) findViewById(R.id.seek);

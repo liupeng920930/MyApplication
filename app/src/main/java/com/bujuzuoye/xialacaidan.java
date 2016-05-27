@@ -9,15 +9,15 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 
 /**
  * Created by Administrator on 16-5-23.
  */
-public class xialacaidan extends Activity {
+public class xialacaidan extends BaseActivity {
     String[] i={"java","jsp","mysql","c","c++"};
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.xialacaidan);
         Spinner s= (Spinner) findViewById(R.id.xiala);
         ArrayAdapter aa=new ArrayAdapter(this,android.R.layout.simple_expandable_list_item_1,i);

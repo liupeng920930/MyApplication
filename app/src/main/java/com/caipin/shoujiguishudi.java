@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -21,7 +22,7 @@ import java.net.URL;
 /**
  * Created by Administrator on 16-5-18.
  */
-public class shoujiguishudi extends Activity {
+public class shoujiguishudi extends BaseActivity {
     EditText shoujitv;
     TextView jieguotv;
     Handler h = new Handler(){
@@ -37,8 +38,7 @@ public class shoujiguishudi extends Activity {
         }
     };
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.shoujiguishudi);
         shoujitv= (EditText) findViewById(R.id.shoujihao);
         jieguotv= (TextView) findViewById(R.id.jieguo);

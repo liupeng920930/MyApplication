@@ -11,6 +11,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -26,7 +27,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 16-5-18.
  */
-public class caipu extends Activity {
+public class caipu extends BaseActivity {
     EditText et;
     ListView tv;
     List<caipinbean.TngouBean> list=new ArrayList<caipinbean.TngouBean>();
@@ -51,8 +52,7 @@ public class caipu extends Activity {
         }
     };
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.caipu);
         et= (EditText) findViewById(R.id.mingzi);
         tv= (ListView) findViewById(R.id.caipu);

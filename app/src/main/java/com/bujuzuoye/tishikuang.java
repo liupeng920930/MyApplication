@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,11 +16,10 @@ import java.util.List;
 /**
  * Created by Administrator on 16-5-25.
  */
-public class tishikuang extends Activity {
+public class tishikuang extends BaseActivity {
     EditText ed;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.duoxuantishikuang);
         ed= (EditText) findViewById(R.id.biancheng);
     }

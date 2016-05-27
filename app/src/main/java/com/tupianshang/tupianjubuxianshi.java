@@ -9,15 +9,15 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.administrator.myapplication.R;
+import com.fuleiACtivity.BaseActivity;
 
 /**
  * Created by Administrator on 16-5-17.
  */
-public class tupianjubuxianshi extends Activity {
+public class tupianjubuxianshi extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.tupianjubuxianshi);
         img = (ImageView) findViewById(R.id.imgid);
         img2=(ImageView) findViewById(R.id.jubuimgid);

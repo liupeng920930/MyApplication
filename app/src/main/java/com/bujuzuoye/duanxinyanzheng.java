@@ -20,9 +20,8 @@ public class duanxinyanzheng extends BaseActivity {
     int i=6;
     Timer t;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.duanxinyanzheng);
-        super.onCreate(savedInstanceState);
     }
  android.os.Handler h=new android.os.Handler(){
      @Override
