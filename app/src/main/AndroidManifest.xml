@@ -89,6 +89,12 @@
         <activity android:name="com.bujuzuoye.xuanxiangka">
 
         </activity>
+        <activity android:name="com.bujuzuoye.guojihua" android:theme="@style/AppTheme.NoActionBar" android:configChanges="locale">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.hengshuping"  android:theme="@style/AppTheme.NoActionBar" android:configChanges="orientation|locale|screenSize">
+
+        </activity>
     </application>
 
 </manifest>

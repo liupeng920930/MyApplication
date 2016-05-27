@@ -41,17 +41,13 @@
     android:src="@drawable/gallerymin1"
     android:id="@+id/imgid"
     android:layout_centerHorizontal="true"
-    android:onClick="fangda"
     />
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/jubuimgid"
-        android:src="@drawable/gallerymin1"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-
-
         />
 </RelativeLayout>
 </LinearLayout>

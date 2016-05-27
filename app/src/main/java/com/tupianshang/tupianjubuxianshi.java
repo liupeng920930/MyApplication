@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
 import com.fuleiACtivity.BaseActivity;
@@ -14,13 +15,27 @@ import com.fuleiACtivity.BaseActivity;
 /**
  * Created by Administrator on 16-5-17.
  */
-public class tupianjubuxianshi extends BaseActivity {
-
+public class tupianjubuxianshi extends BaseActivity{
+    Bitmap bt1;
+    Bitmap bt2;
     @Override
     public void initmycreate(Bundle savedInstanceState) {
         setContentView(R.layout.tupianjubuxianshi);
         img = (ImageView) findViewById(R.id.imgid);
         img2=(ImageView) findViewById(R.id.jubuimgid);
+
+        bt1= BitmapFactory.decodeResource(getResources(),tu[Math.abs(i)%5]);
+        img.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                int x= (int) event.getX();
+                int y= (int) event.getY();
+                bt2=Bitmap.createBitmap(bt1,x,y,50,50);
+                img2.setImageBitmap(bt2);
+                return false;
+            }
+        });
+
     }
 
     int[] tu = {R.drawable.gallerymin1, R.drawable.gallerymin2, R.drawable.gallerymin3, R.drawable.gallerymin4, R.drawable.gallerymin5};
@@ -62,8 +77,6 @@ public class tupianjubuxianshi extends BaseActivity {
         }
 
     }
-    public void fangda(View view){
 
-    }
 
 }

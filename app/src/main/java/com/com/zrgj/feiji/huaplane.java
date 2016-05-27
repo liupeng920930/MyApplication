@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.os.Handler;
 import android.os.Message;
@@ -31,7 +32,10 @@ public class huaplane extends View implements View.OnTouchListener {
     int ziy;
     Bitmap bitmap;
     Bitmap bitmap2;
+    Bitmap bitmap3;
+    Bitmap bt;
     List<zidan> list;
+    int touy=1000;
     Handler h=new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -50,7 +54,10 @@ public class huaplane extends View implements View.OnTouchListener {
         final Paint p=new Paint();
         bitmap= BitmapFactory.decodeResource(getResources(), R.drawable.plane);
         bitmap2= BitmapFactory.decodeResource(getResources(), R.drawable.bullet_04);
+        bitmap3= BitmapFactory.decodeResource(getResources(), R.drawable.back);
         super.onDraw(canvas);
+        bt=Bitmap.createBitmap(bitmap3,70,touy,1080,1920);
+        canvas.drawBitmap(bt,0,0,p);
         canvas.drawBitmap(bitmap,feix,feiy,p);
         for(zidan ee:list){
             canvas.drawBitmap(bitmap2,ee.x,ee.y,p);
@@ -64,9 +71,15 @@ public class huaplane extends View implements View.OnTouchListener {
                         list.remove(i);
                     }
                 }
+
             }
         }).start();
         shu++;
+        if(touy<=500||touy>1000){
+            touy=1000;
+        }else{
+            touy-=20;
+        }
         if(shu%5==0){
             zidan zi=new zidan();
             zi.x=feix-20;

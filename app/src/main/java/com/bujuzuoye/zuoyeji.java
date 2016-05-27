@@ -30,7 +30,8 @@ public class zuoyeji extends Activity {
     ListView lv;
     String[] zuoye={"短信验证","单选多选按钮","图片十字布局","进度条","qq布局","百度成语搜索","多选提示框",
             "布局电话本","下拉菜单","自动搜索","百度查菜谱","查自己服务器的菜品","手机归属地查询","飞机大战",
-            "画心形","图片改变透明度，局部显示","图片循环显示","弥红灯","弹球游戏","图片联系手机联系人","手机分辨率","选项卡"};
+            "画心形","图片改变透明度，局部显示","图片循环显示","弥红灯","弹球游戏","图片联系手机联系人","手机分辨率",
+            "选项卡","国际化图片","横竖屏布局"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,6 +129,14 @@ public class zuoyeji extends Activity {
                 }
                 if(position==21){
                     Intent i=new Intent(zuoyeji.this,xuanxiangka.class);
+                    startActivity(i);
+                }
+                if(position==22){
+                    Intent i=new Intent(zuoyeji.this,guojihua.class);
+                    startActivity(i);
+                }
+                if(position==23){
+                    Intent i=new Intent(zuoyeji.this,hengshuping.class);
                     startActivity(i);
                 }
             }
