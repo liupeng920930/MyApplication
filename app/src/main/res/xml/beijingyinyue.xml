@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditTextPreference
+            android:key="name"
+            android:title="填写用户名"
+            android:summary="填写您的用户名"
+            android:dialogTitle="您使用的用户名" />
+        <SwitchPreference android:key="autoScroll"
+        android:title="背景音乐"
+        android:summaryOn="开启"
+        android:summaryOff="关闭"
+        android:defaultValue="true" />
+</PreferenceScreen>

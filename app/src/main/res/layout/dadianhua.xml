@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/baseactivity" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="输入你要发送的消息"
+    android:id="@+id/duanxin"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取联系人信息"
+        android:onClick="lianxiren"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击发送信息"
+        android:onClick="faxiaoxi"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击打电话"
+        android:onClick="dadianhua"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击返回桌面"
+        android:onClick="fanhui"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击上百度"
+        android:onClick="shangwang"/>
+</LinearLayout>

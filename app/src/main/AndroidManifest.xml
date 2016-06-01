@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/my"
@@ -95,6 +100,25 @@
         <activity android:name="com.bujuzuoye.hengshuping"  android:theme="@style/AppTheme.NoActionBar" android:configChanges="orientation|locale|screenSize">
 
         </activity>
+        <activity android:name="com.com.zrgj.feiji.xitongshizhe">
+
+        </activity>
+<activity android:name="com.bujuzuoye.cai">
+
+</activity>
+        <activity android:name="com.bujuzuoye.caiActivitycaiDetail">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.chengshileibiao"  android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity android:name="com.bujuzuoye.chengshileibiao2">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.dadianhua"  android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
     </application>
 
 </manifest>
