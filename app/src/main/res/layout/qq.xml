@@ -22,7 +22,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/name"
         android:hint="QQ号/手机号/邮箱"
         android:layout_gravity="center_horizontal" />
 
@@ -32,14 +32,23 @@
         android:inputType="textPersonName"
         android:hint="密码"
         android:ems="10"
-        android:id="@+id/editText3"
+        android:id="@+id/pwd"
         android:layout_gravity="center_horizontal" />
-
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zidong"
+        android:text="自动登录"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yinshen"
+        android:text="隐身登录"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="登录"
-        android:id="@+id/button3"
+       android:onClick="denglu"
         android:background="@color/colorPrimary"
         android:layout_gravity="center_horizontal" />
 

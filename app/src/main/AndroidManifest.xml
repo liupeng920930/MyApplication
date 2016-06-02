@@ -118,6 +118,12 @@
         <activity android:name="com.bujuzuoye.dadianhua"  android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+        <activity android:name=".huaban">
+
+        </activity>
+        <activity android:name="com.bujuzuoye.donghua"  android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
 
     </application>
 
