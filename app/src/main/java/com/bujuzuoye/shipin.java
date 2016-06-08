@@ -16,6 +16,7 @@ import java.io.File;
 public class shipin extends Activity {
     VideoView vv;
     MediaController mc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
