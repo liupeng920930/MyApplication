@@ -22,14 +22,8 @@ public class huafeiji extends Activity {
     int x=300;
     int y=200;
     List<zidan> list;
-    MediaPlayer music;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        if(music == null)
-        {
-            music = MediaPlayer.create(huafeiji.this,R.raw.mu);
-        }
-        music.start();
         list=new ArrayList<zidan>();
         super.onCreate(savedInstanceState);
         huaplane v=new huaplane(this);

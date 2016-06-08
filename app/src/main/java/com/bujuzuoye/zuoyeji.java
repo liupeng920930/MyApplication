@@ -34,7 +34,8 @@ public class zuoyeji extends Activity {
             "8.布局电话本","9.下拉菜单","10.自动搜索","11.百度查菜谱","12.查自己服务器的菜品","13.手机归属地查询","14.飞机大战",
             "15.画心形","16.图片改变透明度，局部显示","17.图片循环显示","18.弥红灯","19.弹球游戏","20.图片联系手机联系人","21.手机分辨率",
             "22.选项卡","23.国际化图片","24.横竖屏布局","25.背景音乐设置","26.手机平板适配","27.带返回的intent跳转","28.按钮点击发短信，打电话，上网",
-    "29.手势画板","30.动画"};
+    "29.手势画板","30.动画","31.下载","32.菜品信息","33.文件浏览器","34.百度语音合成","35.数据共享","36.来电播报","37.群发短信","38.设置闹钟","39.视频",
+    "40.开始摇摆"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -164,6 +165,46 @@ public class zuoyeji extends Activity {
                 }
                 if(position==29){
                     Intent i=new Intent(zuoyeji.this,donghua.class);
+                    startActivity(i);
+                }
+                if(position==30){
+                    Intent i=new Intent(zuoyeji.this,wenjianxiazai.class);
+                    startActivity(i);
+                }
+                if(position==31){
+                    Intent i=new Intent(zuoyeji.this,xueshengshuju.class);
+                    startActivity(i);
+                }
+                if(position==32){
+                    Intent i=new Intent(zuoyeji.this,wenjianliulanqi.class);
+                    startActivity(i);
+                }
+                if(position==33){
+                    Intent i=new Intent(zuoyeji.this,yuyinlangdu.class);
+                    startActivity(i);
+                }
+                if(position==34){
+                    Intent i=new Intent(zuoyeji.this,shujugongsiang_content.class);
+                    startActivity(i);
+                }
+                if(position==35){
+                    Intent i=new Intent(zuoyeji.this,jiantingdianhua.class);
+                    startActivity(i);
+                }
+                if(position==36){
+                    Intent i=new Intent(zuoyeji.this,duanxinqunfa.class);
+                    startActivity(i);
+                }
+                if(position==37){
+                    Intent i=new Intent(zuoyeji.this,naozhong.class);
+                    startActivity(i);
+                }
+                if(position==38){
+                    Intent i=new Intent(zuoyeji.this,shipin.class);
+                    startActivity(i);
+                }
+                if(position==39){
+                    Intent i=new Intent(zuoyeji.this,zhendong.class);
                     startActivity(i);
                 }
             }

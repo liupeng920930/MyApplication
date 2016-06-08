@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import com.bujuzuoye.zidan;
 import com.example.administrator.myapplication.R;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,9 +39,8 @@ public class huaplane extends View implements View.OnTouchListener {
     Bitmap bitmap3;
     Bitmap bitmap4;
     Bitmap bitmap5;
-    Bitmap bitmap6;
     AnimationDrawable an;
-    Bitmap bt;
+    Context context;
     List<zidan> list;
     List<diji> list1;
     Matrix m;
@@ -54,6 +54,7 @@ public class huaplane extends View implements View.OnTouchListener {
     };
     public huaplane(Context context) {
         super(context);
+        this.context=context;
         m=new Matrix();
         m.setScale(0.35f,0.35f);
         bitmap= BitmapFactory.decodeResource(getResources(), R.drawable.plane);
@@ -61,7 +62,6 @@ public class huaplane extends View implements View.OnTouchListener {
         bitmap3=Bitmap.createBitmap(bitmap2,0,0,bitmap2.getWidth(),bitmap2.getHeight(),m,false);
         bitmap4= BitmapFactory.decodeResource(getResources(), R.drawable.dijitupian);
         bitmap5=Bitmap.createBitmap(bitmap4,0,0,bitmap4.getWidth(),bitmap4.getHeight(),m,false);
-        bitmap6=BitmapFactory.decodeResource(getResources(), R.drawable.bom);
         list=new ArrayList<zidan>();
         list1=new ArrayList<diji>();
         hua();
@@ -83,6 +83,8 @@ public class huaplane extends View implements View.OnTouchListener {
             for (int j=list.size()-1;j>=0;j--) {
                 if((list.get(j).x)<(list1.get(i).x+200)&&(list.get(j).x)>(list1.get(i).x-70)&&(list.get(j).y)>(list1.get(i).y-20)&&(list.get(j).y)<(list1.get(i).y+80))
                 {
+                  //  int x= (int) list1.get(i).x;
+                  //  int y= (int) list1.get(i).y;
                     list1.remove(i);
                     list.remove(j);
                     b=1;
@@ -122,7 +124,7 @@ public class huaplane extends View implements View.OnTouchListener {
         }else{
             touy-=20;
         }
-        if(shu%3==0){
+        if(shu%4==0){
             zidan zi=new zidan();
             zi.x=feix+105;
             zi.y=feiy-100;
@@ -131,7 +133,7 @@ public class huaplane extends View implements View.OnTouchListener {
             }
             list.add(zi);
         }
-        if(shu%80==0){
+        if(shu%40==0){
             diji zi=new diji();
             zi.x= (float) (Math.random()*850);
             zi.y=5;
@@ -177,5 +179,29 @@ public class huaplane extends View implements View.OnTouchListener {
             }
         }).start();
     }
+class myview extends ImageView{
 
+    public myview(Context context) {
+        super(context);
+    }
+    public void setl(int top,int left){
+        this.setFrame(left,top,left+40,top+40);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        try {
+            Field field=AnimationDrawable.class.getDeclaredField("mCurFrame");
+            field.setAccessible(true);
+            int curFrame=field.getInt(an);
+            if(curFrame==an.getNumberOfFrames()-1){
+                setVisibility(View.INVISIBLE);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        super.onDraw(canvas);
+    }
+}
 }
