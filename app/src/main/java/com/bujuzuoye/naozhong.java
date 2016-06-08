@@ -37,7 +37,7 @@ public class naozhong extends Activity {
                         PendingIntent pi=PendingIntent.getActivity(naozhong.this,0,i,0);
                         Calendar c=Calendar.getInstance();
                         c.setTimeInMillis(System.currentTimeMillis());
-                        c.set(Calendar.HOUR,hourOfDay);
+                        c.set(Calendar.HOUR_OF_DAY,hourOfDay);
                         c.set(Calendar.MINUTE,minute);
                         AlarmManager am= (AlarmManager) getSystemService(ALARM_SERVICE);
                         am.set(AlarmManager.RTC_WAKEUP,c.getTimeInMillis(),pi);

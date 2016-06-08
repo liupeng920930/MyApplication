@@ -136,6 +136,7 @@
         </receiver>
         <activity android:name="com.bujuzuoye.shipin"></activity>
         <activity android:name="com.bujuzuoye.zhendong"></activity>
+        <activity android:name="com.bujuzuoye.fangshengyin"></activity>
     </application>
 
 </manifest>
