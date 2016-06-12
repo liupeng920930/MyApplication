@@ -24,7 +24,7 @@ public class shipin extends Activity {
         vv= (VideoView) findViewById(R.id.shipin);
         getWindow().setFormat(PixelFormat.TRANSLUCENT);
         mc=new MediaController(this);
-        File video=new File("/mnt/sdcard/mm.mp4");
+        File video=new File("/mnt/sdcard/myvideo.mp4");
         if(video.exists()){
             vv.setVideoPath(video.getAbsolutePath());
             vv.setMediaController(mc);

@@ -24,11 +24,12 @@ public class fangshengyin extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fangshengyin);
         mp=new MediaPlayer();
+
     }
     public void record(View view)
     {
-        file = new File("/mnt/sdcard/sound.amr");
         try{
+            file = new File("/mnt/sdcard/sound.amr");
             recorder = new MediaRecorder();
             recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
             recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);

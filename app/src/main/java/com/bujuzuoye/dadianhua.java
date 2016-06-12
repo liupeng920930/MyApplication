@@ -36,7 +36,6 @@ public class dadianhua extends BaseActivity {
         i.setType("vnd.android.cursor.item/phone");
         startActivityForResult(i,0);
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 0 && resultCode == Activity.RESULT_OK) {
@@ -47,7 +46,6 @@ public class dadianhua extends BaseActivity {
                 String contactId = c.getString(c.getColumnIndex(ContactsContract.Contacts._ID));
                 String name = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
                 String phone = "";
-
                 Cursor phoneC = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + contactId, null, null);
                 while (phoneC.moveToNext()) {
                     phone = phone + " " + phoneC.getString(phoneC.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
