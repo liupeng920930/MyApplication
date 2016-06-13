@@ -19,6 +19,5 @@ public class lianxi extends BaseActivity {
         setContentView(R.layout.w);
         QuickContactBadge qq= (QuickContactBadge) findViewById(R.id.qu);
         qq.assignContactFromPhone("15134066912",true);
-
     }
 }
