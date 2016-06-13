@@ -87,6 +87,8 @@
         <activity android:name="com.bujuzuoye.bofangshipin"></activity>
         <activity android:name="com.bujuzuoye.gupiaochaxun"   android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name="com.bujuzuoye.studentshangchuang"   android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.bujuzuoye.chuanganqi"   android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.bujuzuoye.yaoyiyao"   android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
