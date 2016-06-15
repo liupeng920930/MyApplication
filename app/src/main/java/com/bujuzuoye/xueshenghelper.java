@@ -25,6 +25,8 @@ final String sql="create table caipin(_id int primary key,caiming varchar(50),ji
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        String sql1 = "drop table ifexists caipin";
+        db.execSQL(sql1);
+        this.onCreate(db);
     }
 }

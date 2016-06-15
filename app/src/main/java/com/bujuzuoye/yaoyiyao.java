@@ -23,7 +23,6 @@ public class yaoyiyao extends BaseActivity  implements SensorEventListener {
     ImageView img;
     SensorManager manager;
     Bitmap b1;
-    Bitmap b2;
     int p=0;
     RotateAnimation av2;
     //速度阀值
@@ -108,7 +107,7 @@ Handler h=new Handler(){
         //判断
         if(NowSpeed>=mSpeed)
         {
-            if(p>5) {
+            if(p>5&p<9) {
                 av2 = new RotateAnimation(0, 30, Animation.RELATIVE_TO_SELF, 0.5f,
                         Animation.RELATIVE_TO_SELF, 0.5f);
                 av2.setDuration(200);
