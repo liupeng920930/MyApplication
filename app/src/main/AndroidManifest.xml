@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.myapplication">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
@@ -17,13 +18,27 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/my"
         android:label="独一无二"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name="com.bujuzuoye.myapp">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="U9UzREpvfoMtxGA9dOOEPAO6A70lcoL8" />
 
         <activity android:name="com.bujuzuoye.zuoyeji">
             <intent-filter>
@@ -31,6 +46,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name="com.bujuzuoye.kaijihuoqu"></service>
         <activity android:name="com.zrgj.tanqiu.Tanqiu" ></activity>
         <activity android:name=".bianbaixin"></activity>
         <activity android:name="com.com.zrgj.feiji.huafeiji"></activity>
@@ -81,6 +97,11 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
             </intent-filter>
         </receiver>
+        <receiver android:name="com.bujuzuoye.kaiji">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
         <activity android:name="com.bujuzuoye.shipin"></activity>
         <activity android:name="com.bujuzuoye.zhendong"></activity>
         <activity android:name="com.bujuzuoye.fangshengyin"></activity>
@@ -91,6 +112,8 @@
         <activity android:name="com.bujuzuoye.yaoyiyao"   android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name="com.bujuzuoye.fengshui"   android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name="com.bujuzuoye.shoushigaibian"   android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.bujuzuoye.gpsweizhi"   android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.bujuzuoye.baiduditu" ></activity>
     </application>
 
 </manifest>

@@ -19,7 +19,7 @@ final String sql="create table caipin(_id int primary key,caiming varchar(50),ji
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
+    public void onCreate(SQLiteDatabase db)  {
         db.execSQL(sql);
     }
 

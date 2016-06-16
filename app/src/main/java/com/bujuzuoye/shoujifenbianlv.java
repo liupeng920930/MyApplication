@@ -26,8 +26,7 @@ public class shoujifenbianlv extends BaseActivity {
         tv4= (TextView) findViewById(R.id.dpi);
     }
     public  void  huoqu(View v){
-        DisplayMetrics h=new DisplayMetrics();
-        h=getResources().getDisplayMetrics();
+        DisplayMetrics  h=getResources().getDisplayMetrics();
         int w=h.widthPixels;
         int gao=h.heightPixels;
         float d=h.density;
@@ -35,6 +34,6 @@ public class shoujifenbianlv extends BaseActivity {
         tv1.setText("宽是"+w+"寸");
         tv2.setText("高是"+gao+"寸");
         tv3.setText("手机密度是"+d+"");
-        tv4.setText("手机dp是"+dp+"");
+        tv4.setText("手机dpi是"+dp+"");
     }
 }

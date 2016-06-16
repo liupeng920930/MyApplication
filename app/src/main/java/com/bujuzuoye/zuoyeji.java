@@ -35,7 +35,8 @@ public class zuoyeji extends Activity {
             "15.画心形","16.图片改变透明度，局部显示","17.图片循环显示","18.弥红灯","19.弹球游戏","20.图片联系手机联系人","21.手机分辨率",
             "22.选项卡","23.国际化图片","24.横竖屏布局","25.背景音乐设置","26.手机平板适配","27.带返回的intent跳转","28.按钮点击发短信，打电话，上网",
     "29.画布","30.动画","31.下载","32.菜品信息","33.文件浏览器","34.百度语音合成","35.数据共享","36.来电播报","37.群发短信","38.设置闹钟","39.视频",
-    "40.开始摇摆","41.放声音","42.放自己录得视频","42.查询股票","43.上传文件","44.传感器","45.摇一摇","46.周易，风水","47.手势改变图片大小"};
+    "40.开始摇摆","41.放声音","42.放自己录得视频","42.查询股票","43.上传文件","44.传感器","45.摇一摇","46.周易，风水","47.手势改变图片大小","48.GPS",
+    "49.百度地图"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -237,6 +238,14 @@ public class zuoyeji extends Activity {
                 }
                 if(position==47){
                     Intent i=new Intent(zuoyeji.this,shoushigaibian.class);
+                    startActivity(i);
+                }
+                if(position==48){
+                    Intent i=new Intent(zuoyeji.this,gpsweizhi.class);
+                    startActivity(i);
+                }
+                if(position==49){
+                    Intent i=new Intent(zuoyeji.this,baiduditu.class);
                     startActivity(i);
                 }
             }
